@@ -21,7 +21,7 @@ loginfo "Install homebrew"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 
-packages="vim git nvm wget curl docker zsh"
+packages="vim git nvm wget docker zsh"
 for package in $packages; do
   loginfo "Install $package..."
   brew install $package
